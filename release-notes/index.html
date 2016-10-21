@@ -1,0 +1,844 @@
+<!DOCTYPE html><html lang="en">
+<!-- Mirrored from www.lightningdesignsystem.com/release-notes/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Oct 2016 14:52:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset="utf-8"/><title>Lightning Design System</title><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link type="text/css" rel="stylesheet" href="../assets/styles/slds.css"/><link type="text/css" rel="stylesheet" href="../assets/styles/site.css"/><link rel="apple-touch-icon" sizes="57x57" href="../favicons/apple-touch-icon-57x57.png"/><link rel="apple-touch-icon" sizes="60x60" href="../favicons/apple-touch-icon-60x60.png"/><link rel="apple-touch-icon" sizes="72x72" href="../favicons/apple-touch-icon-72x72.png"/><link rel="apple-touch-icon" sizes="76x76" href="../favicons/apple-touch-icon-76x76.png"/><link rel="apple-touch-icon" sizes="114x114" href="../favicons/apple-touch-icon-114x114.png"/><link rel="apple-touch-icon" sizes="120x120" href="../favicons/apple-touch-icon-120x120.png"/><link rel="apple-touch-icon" sizes="144x144" href="../favicons/apple-touch-icon-144x144.png"/><link rel="apple-touch-icon" sizes="152x152" href="../favicons/apple-touch-icon-152x152.png"/><link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon-180x180.png"/><link rel="icon" type="image/png" href="../favicons/favicon-32x32.png" sizes="32x32"/><link rel="icon" type="image/png" href="../favicons/favicon-194x194.png" sizes="194x194"/><link rel="icon" type="image/png" href="../favicons/favicon-96x96.png" sizes="96x96"/><link rel="icon" type="image/png" href="../favicons/android-chrome-192x192.png" sizes="192x192"/><link rel="icon" type="image/png" href="../favicons/favicon-16x16.png" sizes="16x16"/><meta name="apple-mobile-web-app-title" content="Design System"/><meta name="application-name" content="Design System"/><meta name="msapplication-TileColor" content="#ffffff"/><meta name="msapplication-TileImage" content="../favicons/mstile-144x144.png"/><meta name="theme-color" content="#ffffff"/><script>
+      +function(l,y,t,i,c,s) {
+        l['LocalyticsGlobal'] = i;
+        l[i] = function() { (l[i].q = l[i].q || []).push(arguments) };
+        l[i].t = +new Date;
+        (s = y.createElement(t)).type = 'text/javascript';
+        s.src = '../../web.localytics.com/v3/localytics.min.js';
+        (c = y.getElementsByTagName(t)[0]).parentNode.insertBefore(s, c);
+        ll('init', '2a6dc90c85e5991e50f752a-f8539a44-1e85-11e5-44ef-006918dcf667', {} /* Options */);
+      }(window, document, 'script', 'll');
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-45076517-7', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+    </script><script src="../../cdn.ravenjs.com/3.7.0/raven.min.js"></script><script>
+  Raven.config(
+    'https://da9c494a510541bb98b5a8f51181f5de@sentry.io/98830',
+    { whitelistUrls: [ /https?:\/\/(.*\.)?lightningdesignsystem\.com/ ] }
+  ).install();
+</script></head><body><div class="page-wrapper"><div><header class="site-banner" role="banner"><a href="../index.html"><span class="site-logo">Salesforce</span></a><div class="site-skip-content"><a href="#navigation">Skip to Navigation</a></div></header><main class="site-main" role="main"><header class="site-masthead slds-grid slds-wrap"><div class="site-masthead-title slds-col slds-has-flexi-truncate slds-align-middle"><div class="slds-media slds-media--center slds-media--responsive"><span class="slds-media__figure"><img src="../assets/images/header-resources.svg" alt=""/></span><div class="slds-media__body"><div class="slds-grid"><span class="slds-hide docsearch-category">Resources</span><h1 title="Release Notes">Release Notes</h1></div></div></div></div></header><div class="site-content slds-p-around--xx-large site-release-notes slds-container--large"><p class="site-text-introduction">Download the CSS Framework and other resources from the <a href="../downloads/index.html">Downloads page</a></p><div class="releasenotes"><h1 class="site-hide">Salesforce Lightning Design System</h1 class="site-hide">
+<h1 class="site-hide">Release notes</h1 class="site-hide">
+<!-- Release notes authoring guidelines: http://keepachangelog.com/ -->
+<!-- ## [Unreleased] -->
+<h2 class="site-text-heading--large">Release <a href="https://github.com/salesforce-ux/design-system/compare/v2.1.2...v2.1.3">2.1.3</a> - September 21, 2016</h2 class="site-text-heading--large">
+<p><strong>FIXED</strong></p>
+<p>The following issues have now been resolved:</p>
+<ul>
+<li>Included the logo SVG asset used in the Global header</li>
+<li>Use <code>@support</code> for progressive enhancement of <code>mix-blend-mode</code> for active/hover states in Global Navigation</li>
+<li>Removed the demo style <code>.slds-text-align--center</code> from <code>.slds-card__body</code></li>
+</ul>
+<p><strong>DEPRECATED</strong></p>
+<p>Customizing the CSS class names by customizing <code>$css-prefix</code> is deprecated and will be removed in version 2.2.
+As an alternative, please use this PostCSS plugin to customize class name prefixes: <a href="https://github.com/salesforce-ux/postcss-slds-prefix">postcss-slds-prefix</a>.</p>
+<h2 class="site-text-heading--large">Release <a href="https://github.com/salesforce-ux/design-system/compare/v2.0.3...v2.1.2">2.1.2</a> - September 6, 2016</h2 class="site-text-heading--large">
+<p><strong>SITE IA/ENHANCEMENTS</strong></p>
+<p>The following site enhancements are now available:</p>
+<ul>
+<li>Moved Archives section up on Downloads page, and added a link to the section on the homepage, for better visibility.</li>
+<li>New Checkbox Toggle guidelines under <a href="../guidelines/data-entry/index.html">Data Entry section</a>.</li>
+<li>New &quot;Touch&quot; section under &quot;Components&quot;, where you’ll find patterns especially optimized for touch</li>
+<li>Link to Styling with Design Tokens on the platform added on <a href="../design-tokens/index.html">Design Tokens</a>, <a href="../platforms/lightning/index.html">Lightning Components</a>, and <a href="../downloads/index.html">Downloads</a> pages.</li>
+<li>Button Icon component has been moved out of Buttons and into its own category <a href="../components/button-icon/index.html">Button Icon</a></li>
+<li>Picklist component has been moved out of Menus and into its own category <a href="../components/picklist/index.html">Picklist</a></li>
+</ul>
+<p><strong>NEW COMPONENTS AND VARIANTS</strong></p>
+<p>The following components are now available:</p>
+<ul>
+<li>App Launcher - <a href="../components/app-launcher/index.html">App Launcher Component</a></li>
+<li>Global Navigation - Standard context bar - <a href="../components/global-navigation/index.html">Global Navigation Component</a></li>
+<li>Global Header - <a href="../components/global-header/index.html">Global Header Component</a></li>
+<li>Docked Utility Bar - <a href="../components/docked-utility-bar/index.html">Docked Utility Bar Component</a></li>
+<li>Filtering panel - <a href="../components/panels/index.html#flavor-filtering">Filtering Panel Component</a></li>
+<li>Files - <a href="../components/files/index.html">File Components</a></li>
+<li>File selector - <a href="../components/file-selector/index.html">File Selector</a></li>
+<li>Feed v2 - <a href="../components/feeds/index.html">Feeds Component</a></li>
+<li>Indeterminate checkbox - <a href="../components/forms/index.html#flavor-checkbox">Indeterminate checkbox component</a></li>
+<li>Button Icon Inverse - Bordered - <a href="../components/button-icons/index.html#flavor-icon-container-button-icon-border">Button Icon Inverse with Border</a></li>
+<li>Button Icon Inverse - Hint Hover - <a href="../components/button-icons/index.html#flavor-icon-with-hint-hover">Button Icon with Hint Hover</a></li>
+<li>Button Icon Error - <a href="../components/button-icons/index.html#flavor-base-button-icon-error">Button Icon Error</a></li>
+<li>Image Cards - <a href="../components/images/index.html#flavor-figure-figure-card">Figure Card Component</a></li>
+<li>Image Ratios - <a href="../components/images/index.html#flavor-figure-ratio">Figure Ratio Component</a></li>
+<li>Vertical Navigation color variation - <a href="../components/navigation/index.html#flavor-vertical-inverse">Vertical Navigation</a></li>
+</ul>
+<p><strong>ADDED</strong></p>
+<p>The following classes are now available:</p>
+<ul>
+<li>Text color helpers - <a href="../components/utilities/text/index.html#flavor-color">Utilities › Text › Color</a></li>
+<li>Text title utility - <code>.slds-text-title</code> - <a href="../components/utilities/text/index.html#flavor-title">Utilities › Text › Text Title</a></li>
+<li>Text link utility - Made text inside of <code>.slds-text-link--reset</code> appear as a link - <a href="../components/utilities/interactions/index.html#flavor-text-link">Utilities › Interactions › Text Link</a></li>
+<li>Truncation containers <a href="../components/utilities/truncation/index.html#flavor-max-width">Utilities › Truncation</a></li>
+<li>Absolute sizes utility classes: <code>.slds-size--xx-small</code>, <code>.slds-size--x-small</code>, <code>.slds-size--medium</code>, <code>.slds-size--large</code>, <code>.slds-size--x-large</code>, <code>.slds-size--xx-large</code> and their responsive equivalents - in <a href="../components/utilities/sizing/index.html">Utilities › Sizing</a></li>
+<li>Hyphenation utility for non-truncated headings in narrow containers - <a href="../components/utilities/hyphenation/index.html">Utilities › Hyphenation</a></li>
+<li>Position utilities - <a href="../components/utilities/position/index.html">Utilities › Position</a></li>
+<li>Table column borders - Added vertical column borders on a table by applying <code>.slds-table--col-bordered</code></li>
+<li>Name/Value pair lists - 3 variations - horizontal, inline and stacked - <a href="../components/utilities/lists/index.html#flavor-name-value-pair">Utilities › Lists › Name Value Pair</a></li>
+<li>Generated grid column spans 1, 2, 3, 4, 5, 6, 7, 8, and 12 for all breakpoints</li>
+<li>Added archives for previous versions of the site for customers that can't upgrade yet. These site archives are currently available at the bottom of the <a href="../downloads/index.html">Downloads page</a></li>
+</ul>
+<p><strong>CHANGES</strong></p>
+<p>The following changes have been made in this release:</p>
+<ul>
+<li><a href="../components/forms/index.html#flavor-docked-form-footer-docked-form-footer-with-popover">Docked Form Footer</a> popover tooltip naming changed to popover.</li>
+<li><a href="https://tools.lightningdesignsystem.com/css-customizer">CSS Scoping Tool</a> is now only necessary when building components to be included in Visualforce</li>
+<li><a href="../platforms/lightning/index.html">Using SLDS in Lightning</a> has been updated to include information about Lightning Out, Lightning Components for Visualforce, and Lightning Applications.</li>
+<li>Nubbins on <a href="../components/popovers/index.html#flavor-nubbins">Popovers</a> have been moved .5rem/8px closer to the respective edge of the popover to match the spec</li>
+<li><a href="../components/pills/index.html">Pills</a> have been updated with a more accessible DOM. They are no longer made from an anchor, but instead contain the anchor. Documentation is updated. (Old pills will not break)</li>
+<li><a href="../components/forms/index.html#flavor-checkbox-toggle">Checkbox Toggle</a> has an updated design with the ability to add custom words below the toggle</li>
+<li><a href="../components/forms/index.html#flavor-checkbox">Checkbox</a> and <a href="../components/forms/index.html#flavor-radio">Radios</a> have been updated with a new, more accessible than ever DOM structure. (Your old DOM will not break.)</li>
+<li>Brightened yellow background on <code>mark</code> element.</li>
+<li>Text selected with your mouse is light blue.</li>
+<li>Renamed &quot;slide-out&quot; panel to &quot;details&quot; - <a href="../components/panels/index.html#detail">Detail Panel Component</a></li>
+<li>Renamed &quot;Base&quot; data table to &quot;Basic&quot; data table - <a href="../components/data-tables/index.html">Data Table Component</a></li>
+<li>Abstracted complex data table features into a variant named &quot;Advanced&quot; data table - <a href="../components/data-tables/index.html#advanced">Data Table Component</a></li>
+<li>Improvements made to <code>.slds-text-link--reset</code> - <a href="../components/utilities/interactions/index.html#link-reset">Utilities › Interactions › Text Link Reset</a></li>
+<li>Removed light font-weight from the text utility <code>.slds-text-heading--small</code> - <a href="../components/utilities/text/index.html#flavor-heading-heading-small">Utilities › Text › Text Heading Small</a></li>
+<li>Removed <code>position: relative</code> from <code>.slds-grid</code></li>
+<li>Feeds are now responsive</li>
+<li>Added close button to error popover so a screen reader can access popover</li>
+<li>Added animated waffle icon to Global Navigation <a href="../components/global-navigation/index.html">Global Navigation</a></li>
+<li>Feeds:
+<ul>
+<li>Changed post's comment metric labels to lowercase</li>
+<li>Added hint-hover to post's comment action overflow icon</li>
+<li>Changed post's comment &quot;link&quot; text to use <code>.slds-color-link--weak</code></li>
+<li>Removed dotted line separator from post's attachment payload</li>
+<li>Moved URL of post's attachment to the bottom of the content ordering</li>
+<li>Removed truncation from preamble</li>
+<li>Reduced white space between feed items</li>
+</ul>
+</li>
+<li>Updated <a href="../components/activity-timeline/index.html#flavor-email">Activity Timeline Email example</a> to show the to and from with truncation</li>
+</ul>
+<p><strong>FIXED</strong></p>
+<p>The following issues have now been resolved:</p>
+<ul>
+<li>Recorded home vertical accessibility fixes
+<ul>
+<li>Added <code>aria-haspopup=&quot;true&quot;</code> to action overflow buttons</li>
+<li>Added assistive text for icon</li>
+<li>Removed unnecessary aria roles from action overflow buttons</li>
+<li>Improved assistive text verbiage</li>
+<li>Made multiple value field entirely clickable to invoke dropdown</li>
+</ul>
+</li>
+<li>Global header accessibility fixes
+<ul>
+<li>Modified tab order of global header actions</li>
+<li>Added <code>title</code> attribute to global header actions</li>
+<li>Changed avatar wrapper from anchor to a button</li>
+<li>Allowed <code>.slds-assistive-text</code> to become visible on focus if <code>.slds-assistive-text--focus</code> is used</li>
+<li>Added aria roles to global search input</li>
+<li>Changed global search listbox options to be non-actionable</li>
+<li>Moved &quot;click enter to search&quot; and &quot;go to&quot; options back into <code>&lt;ul&gt;</code> so they can be discovered by screen readers</li>
+<li>Added <code>.slds-has-focus</code> to apply focus state on listbox options when keyboard interactions are used</li>
+<li>Moved clear button to the right of the input to visually match tab order</li>
+</ul>
+</li>
+<li>Lookup/Global Header Search accessibility fixes
+<ul>
+<li>Improved semantics of dropdown menus</li>
+<li>Applied <code>role=separator</code> to dropdown menu list items that do not have an actionable element</li>
+<li>Applied <code>role=presentation</code> to dropdown menu list items</li>
+<li>Changed <code>&lt;p&gt;</code> wrapping dropdown menu items text to <code>&lt;span&gt;</code></li>
+<li>Dropdown menu items have a default <code>tabindex=&quot;-1&quot;</code>, tab focused items changed to a <code>tabindex=&quot;0&quot;</code></li>
+</ul>
+</li>
+<li>Utility bar accessibility fixes
+<ul>
+<li>Added landmark <code>role=&quot;footer&quot;</code> to utility bar</li>
+<li>Added <code>aria-label=&quot;Utility Bar&quot;</code> description to utility bar</li>
+<li>Added hidden heading to utility bar</li>
+<li>Added aria <code>role=dialog</code> and <code>aria-labelledby</code> to utility bar panel</li>
+<li>Changed panel header text to be wrapped in a heading with a id to reference the <code>aria-labelledby</code></li>
+<li>Placed utility bar buttons inside <code>&lt;ul&gt;</code></li>
+</ul>
+</li>
+<li>Files accessibility fixes
+<ul>
+<li>Fixed invalid markup by moving button group outside of anchor</li>
+<li>Image overlay is now enabled by adding an extra html element before the image and adding the class <code>.slds-image--overlay</code></li>
+</ul>
+</li>
+<li>Card accessibility fixes
+<ul>
+<li>Moved <code>&lt;header&gt;</code> element to only contain the card header text, rather than the text and overflow menu</li>
+<li>Changed <code>&lt;p&gt;</code> tags with truncation in related list markup to <code>&lt;span&gt;</code> tags</li>
+</ul>
+</li>
+<li>Made primary labels of compound fields capital</li>
+<li>Dropdowns appear on icon focus within Global Navigation</li>
+<li>Labeled the dialog with the heading of the modal using <code>aria-labelledby=&quot;id_of_heading&quot;</code> in the app launcher component</li>
+<li>Tables accessibility fixes: all tables now use the same truncation method when text is too long in a cell and show the full text when truncated text is hovered</li>
+<li>Accessibility fixes for list builder</li>
+<li>Fixed an issue where examples contained the same ID multiple times</li>
+<li>Feeds accessibility fixes
+<ul>
+<li>Comments are now list items in an unordered list structure</li>
+<li>The browser shows a focus ring when avatars are focused</li>
+</ul>
+</li>
+<li>Accessibility fixes to Menus and Picklist, including Menus used in composite SLDS components
+<ul>
+<li>Removed of <code>aria-expanded</code> on containers</li>
+<li><code>role=&quot;presentation&quot;</code> added on list items to remove them from the accessibility tree</li>
+<li>Corrected use of <code>menuitemcheckbox</code> for selectable menu items, with the use of <code>aria-checked</code> instead of <code>aria-selected</code></li>
+<li>Corrected sub heading menus which was split across multiple un-ordered lists</li>
+<li>Included line separators and sub-heading separators into the accessibility tree with <code>role=&quot;separator&quot;</code></li>
+</ul>
+</li>
+<li>Added <code>aria-describedby</code> on textarea element to show error message ID</li>
+<li>Added <code>aria-live</code> attribute to the stateful icon button</li>
+<li>Added <code>aria-describedby</code> on select element to show error message ID</li>
+<li>Added <code>aria-haspopup</code> on Activity Timeline menu buttons, and updated each list item to use an <code>&lt;h1 class="site-text-heading--label"&gt;</code> tag</li>
+<li>Added hyphenation code to popovers so that long words will break and wrap</li>
+</ul>
+<p><strong>DEPRECATED</strong></p>
+<p>The following features are being marked as deprecated in this release and will be removed in three releases:</p>
+<ul>
+<li>Feeds v1 - Design has changed to v2 - <a href="../components/feeds/index.html">Feeds v2 Component</a></li>
+<li>Text heading label utility - Use Text title utilities instead - <a href="../components/utilities/text/index.html#flavor-title">Utilities › Text › Text Title</a></li>
+</ul>
+<p><strong>REMOVED</strong></p>
+<p>The following features or demos are being removed in this release:</p>
+<ul>
+<li>Removed inverse and state themes from examples to provide clarity of usage.</li>
+</ul>
+<h2 class="site-text-heading--large">Release <a href="https://github.com/salesforce-ux/design-system/compare/v2.0.2...v2.0.3">2.0.3</a> - August 1, 2016</h2 class="site-text-heading--large">
+<p><strong>FIXED</strong></p>
+<p>The following issues have now been resolved:</p>
+<ul>
+<li>Card a11y fixes
+<ul>
+<li>Card semantically changed to an <code>article</code></li>
+<li>Card header semantically changed to a <code>header</code></li>
+<li>Added <code>aria-haspopup=&quot;true&quot;</code> to action overflow button since it invokes a dropdown menu</li>
+<li>Wrapped card header text in an <code>&lt;h2 class="site-text-heading--large"&gt;</code></li>
+</ul>
+</li>
+<li>Fixed label for / textarea id mismatch in form textarea example</li>
+<li>Fixed modal close button styling so the focus halo no longer overlaps with the modal body</li>
+<li>Labeled the dialog with the heading of the modal using <code>aria-labelledby=&quot;id_of_heading&quot;</code> and removed <code>aria-hidden=&quot;false&quot;</code> from modal</li>
+<li>Added an example usage of <code>slds-table--striped</code> in the basic data table example</li>
+<li>Reverted modal components for the touch devices to prototype status while a fix for using them in Salesforce1 is found</li>
+<li>Added a title attribute to the truncation example</li>
+<li>Changed status of single-line truncation to dev-ready</li>
+<li>Fixed an issue where <code>&lt;legend&gt;</code> were bold in visual force - Fixes <a href="https://github.com/salesforce-ux/design-system/pull/216">#216</a></li>
+<li>Added <code>aria-describedby</code> attribute on Tooltip component trigger</li>
+</ul>
+<p><strong>CHANGES</strong></p>
+<ul>
+<li>The Sass file architecture was reorganized for better maintainability - <a href="https://github.com/salesforce-ux/design-system/commit/de2dc7f6bd5aff31998fb43254d438ec9cec8dc3">see commit de2dc7f</a> for a full breakdown of changes</li>
+</ul>
+<h2 class="site-text-heading--large">Release <a href="https://github.com/salesforce-ux/design-system/compare/v2.0.1...v2.0.2">2.0.2</a> - June 16, 2016</h2 class="site-text-heading--large">
+<p><strong>SITE IA/ENHANCEMENTS</strong></p>
+<ul>
+<li>Revamped &quot;Getting Started&quot; section.</li>
+<li>Renamed &quot;Design&quot; section to &quot;Guidelines&quot;</li>
+<li>Moved &quot;Accessibility&quot; and &quot;Voice &amp; Tone&quot; sections to Guidelines</li>
+</ul>
+<p><strong>CHANGES</strong></p>
+<p>The following changes have been made in this release:</p>
+<ul>
+<li>Pills now reference a token that allow for consistent heights in all context</li>
+</ul>
+<p><strong>FIXED</strong></p>
+<p>The following issues have now been resolved:</p>
+<ul>
+<li>Text inputs are referencing the correct 32px tall token - fixes <a href="https://github.com/salesforce-ux/design-system/issues/150">https://github.com/salesforce-ux/design-system/issues/150</a></li>
+<li>Resolve issue where <code>&lt;th&gt;</code> stayed white on striped row when <code>slds-table--striped</code> is applied - fixes <a href="https://github.com/salesforce-ux/design-system/issues/232">https://github.com/salesforce-ux/design-system/issues/232</a></li>
+<li>Toggle checkboxes are now aligned vertically with their label (<code>slds-form-element__label m-bottom--</code> › <code>slds-form-element__label slds-m-bottom--none</code>) — <a href="../components/forms/index.html#flavor-checkbox-toggle">Checkbox Toggle variant</a></li>
+</ul>
+<p><strong>REMOVED</strong></p>
+<p>The following features are being removed in this release:</p>
+<ul>
+<li>Removed incorrect spec for lookups with active selection(s)</li>
+</ul>
+<h2 class="site-text-heading--large">Release <a href="https://github.com/salesforce-ux/design-system/compare/v1.0.5...v2.0.1">2.0.1</a> - June 6, 2016</h2 class="site-text-heading--large">
+<p><strong>SITE IA/ENHANCEMENTS</strong></p>
+<p>The following site enhancements are now available:</p>
+<ul>
+<li>Grid system moved to utilities and renamed to &quot;Grid&quot;</li>
+<li>Media object moved to utilities</li>
+<li>New states added for button-groups showing overflow dropdown</li>
+<li>Cards variant navigation has been improved</li>
+<li>Data table variant navigation has been improved</li>
+<li>Lookup variant navigation has been improved</li>
+<li>List variant navigation has been improved</li>
+</ul>
+<p><strong>NEW COMPONENTS AND VARIANTS</strong></p>
+<p>The following components are now available:</p>
+<ul>
+<li>Checkbox Toggle - <a href="../components/forms/index.html#checkbox-toggle">Checkbox toggle component</a></li>
+<li>Checkbox Alternate - <a href="../components/forms/index.html#checkbox-alternate">Checkbox alternate component</a></li>
+<li>Card - Related list with tiles - <a href="../components/cards/index.html#flavor-related-list-with-tiles">Related list card with tiles component</a></li>
+<li>Data Table - Basic and Advanced - <a href="../components/data-tables/index.html">Data table component</a></li>
+<li>Detail Panel with Inline Edit Form - <a href="../components/panels/index.html#detail">Detail panel component</a></li>
+<li>Docked Composer - Voice Integration - <a href="../components/docked-composer/index.html#voice">Voice docked composer component</a></li>
+<li>Modal with no header and/or no footer - <a href="../components/modals/index.html#flavor-base">Modal component</a></li>
+<li>Lookups spec updated - Single and Polymorphic - <a href="../components/lookups/index.html">Lookup component</a></li>
+<li>Page headers spec updated - <a href="../components/page-headers/index.html">Page Header component</a></li>
+<li>Vertical Navigation for in-page navigation - <a href="../components/navigation/index.html#flavor-vertical">Vertical navigation component</a></li>
+<li>Radio Group Alternate - <a href="../components/forms/index.html#radio-group-alternate">Radio group alternate component</a></li>
+<li>Tree Grid - <a href="../components/trees/index.html#grid">Tree grid component</a></li>
+</ul>
+<p><strong>ADDED</strong></p>
+<p>The following classes are now available:</p>
+<ul>
+<li>Alignment utility - Absolute Center - <a href="../components/utilities/alignment/index.html">Alignment - Absolute center utility</a></li>
+<li>Interaction utilities - Link reset - <a href="../components/utilities/interactions/index.html">Interaction Utilities</a></li>
+<li>Text Utility - Heading label normal - <a href="../components/utilities/text/index.html#heading-label-normal">Heading label normal</a></li>
+<li>Theme Utility - Light version theme texture - <a href="../components/utilities/themes/index.html#color">Theme texture</a></li>
+<li>Position input icons on both sides of the input container - <a href="../components/forms/index.html#flavor-input">Input</a></li>
+<li>Position utilities - Relative and Static - <a href="../components/utilities/position/index.html">Position Utilities</a></li>
+</ul>
+<p><strong>CHANGES</strong></p>
+<p>The following changes have been made in this release:</p>
+<ul>
+<li>Overall, things will appear visually tighter</li>
+<li>Added additional space between buttons in the modal footer</li>
+<li>Font sizes have been reduced</li>
+<li>Page Headers are visually smaller</li>
+<li>Page Header details are now on white and align to the left</li>
+<li>Modals are visually tighter</li>
+<li>All buttons are visually smaller</li>
+<li>Form Elements are visually smaller</li>
+<li>Activity timeline sizing &amp; spacing is reduced</li>
+<li>Visual density changes in cards</li>
+<li>Visual density changes in popovers</li>
+<li>&quot;View all&quot; links in cards and popover panels are now aligned to the right</li>
+<li><code>slds-modal--content</code> should use the additive class of <code>slds-p-vertical--large</code> and <code>slds-p-horizontal--x-large</code>, instead of <code>slds-p-around--medium</code>.</li>
+<li>Removed first and last cell padding from Data Tables to allow nesting. New
+class <code>.slds-table--cell-buffer</code> can be added to the table or <code>.slds-cell-buffer--left</code> and <code>.slds-cell-buffer--right</code> for individual cell application.</li>
+<li>Field level help icon moved to the right of the input label</li>
+<li>Removed over-reaching a:focus styles due to a recent FFOX visual change</li>
+<li>Data table sortable headings now have actionable area so they can be focusable</li>
+<li>Improved interactions for resize element on data tables</li>
+<li>Docked Composer has improved markup, focusing on semantic structure and identifying the component correctly to Assistive Technology as a labelled <code>dialog</code>.</li>
+<li>Datepicker has improved markup, focusing on semantic structure and identifying proper aria roles for dates.</li>
+<li>Resolved semantic bug by making Pill container a <code>&lt;span&gt;</code>. <code>&lt;a&gt;</code> moved inside and adjacent to the close button.</li>
+<li>Notification Prompt has improved accessibility in better identifying the component to screen readers using <code>aria-role=&quot;alertdialog&quot;</code>, <code>aria-labelledby</code> and
+<code>aria-describedby</code>. The redundant <code>slds-modal__close</code> button has also been removed.</li>
+</ul>
+<p><strong>FIXED</strong></p>
+<p>The following issues have now been resolved:</p>
+<ul>
+<li>Truncation class is added to headings in the Edit Form for Touch</li>
+<li>Removed max-height and animation on <code>.slds-section__content</code> to prevent collision with JavaScript implementations</li>
+<li>Fixed IE11 page header truncation bug</li>
+</ul>
+<p><strong>DEPRECATED</strong></p>
+<p>The following features are being marked as deprecated in this release and will be removed in three releases:</p>
+<ul>
+<li>Lookups have been updated. Version 1.0.0 has been deprecated. Will continue to work but please update to new markup - <a href="../components/lookups/index.html">Lookup component</a></li>
+<li>Page headers have been updated. Version 1.0.0 has been deprecated. Will continue to work but please update to new markup - <a href="../components/page-headers/index.html">Page Header component</a></li>
+<li><code>.slds-toggle-visibility</code> is no longer needed in button-groups. The final button will no longer disappear if it is a button-icon, but instead will gray down like a normal disabled button.</li>
+<li><code>.slds-button-space-left</code> is no longer supported. Please use spacing utilities instead.</li>
+<li><code>.slds-button--icon-bare</code> is no longer needed. Please use <code>.slds-button--icon</code> instead.</li>
+<li><code>.slds-card--empty</code> is no longer needed. Please use <code>.slds-text-align--center</code> utility class instead.</li>
+<li><code>.slds-button</code> inside of <code>.slds-is-sortable</code> is no longer needed. The entire cell is hyperlinked now, no need for the button.</li>
+<li><code>.slds-form-element__helper</code> is no longer supported.</li>
+<li><code>.slds-input__icon</code> no longer supports a color by default. Please use <code>.slds-icon-text-default</code> on the SVG icon instead.</li>
+<li><code>.slds-icon__container</code> is no longer supported. Please use <code>.slds-icon_container</code> instead.</li>
+<li><code>.slds-icon-custom-XX</code> is no longer supported. Please use <code>.slds-icon-custom-customXX</code> instead.</li>
+<li><code>.slds-dropdown--nubbin-top</code> is no longer supported. Please use <code>.slds-nubbin--top</code> instead.</li>
+<li><code>.slds-has-icon--left</code>, <code>.slds-has-icon--right</code>, and <code>.slds-has-icon--left-right</code> within dropdowns are no longer needed. Icons can be placed within the flow of a <code>.slds-dropdown__item</code>.</li>
+<li><code>.slds-modal-backdrop</code> is no longer supported. Please use <code>.slds-backdrop</code> instead.</li>
+<li><code>.slds-notify-container</code> is no longer supported. Please use <code>.slds-notify_container</code> instead.</li>
+<li><code>.slds-pill-container</code> and <code>.slds-pill__container</code> are no longer supported. Please use <code>.slds-pill_container</code> instead.</li>
+<li><code>.slds-pill__container--bare</code> is no longer supported. Please use <code>.slds-pill_container--bare</code> instead.</li>
+<li><code>.slds-tabs__item</code> is no longer supported. Please use specific element selectors instead, such as <code>.slds-tabs--default__item</code> or <code>.slds-tabs--scoped__item</code>.</li>
+<li><code>.slds-tooltip</code> and <code>.slds-tooltip__body</code> are no longer supported. Please use <code>.slds-popover</code> and <code>.slds-popover__body</code> instead.</li>
+<li><code>.slds-tree-container</code> is no longer supported, please use <code>.slds-tree_container</code> instead.</li>
+<li><code>.slds-col-rule--left</code>, <code>.slds-col-rule--right</code>, <code>.slds-col-rule--top</code>, and <code>.slds-col-rule--bottom</code> are no longer supported. Please use <code>.slds-col--rule-left</code>, <code>.slds-col--rule-right</code>, <code>.slds-col--rule-top</code>, and <code>.slds-col--rule-bottom</code> instead.</li>
+<li><code>.slds-nowrap--small</code>, <code>.slds-nowrap--medium</code>, and <code>.slds-nowrap--large</code> are no longer supported. Please use <code>.slds-small-nowrap</code>, <code>.slds-medium-nowrap</code>, and <code>.slds-large-nowrap</code> instead.</li>
+<li><code>.slds-align-content-center</code> is no longer supported. Please use <code>.slds-align--absolute-center</code> instead.</li>
+<li><code>.slds-has-dividers</code> is no longer supported. Please use <code>.slds-has-dividers--{position}</code> instead.</li>
+<li><code>.slds-has-divider</code> is no longer supported. Please use <code>.slds-has-divider--{position}</code> instead.</li>
+<li><code>.slds-has-cards</code> is no longer supported. Please use <code>.slds-has-divider--around</code> instead.</li>
+<li><code>.slds-has-cards--space</code> is no longer supported. Please use <code>.slds-has-divider--around-space</code> instead.</li>
+<li><code>.slds-section-title</code> is no longer supported. Please use <code>.slds-section__title</code> instead.</li>
+<li><code>.slds-collapsed</code> is no longer supported. Please use <code>.slds-is-collapsed</code> instead.</li>
+<li><code>.slds-expanded</code> is no longer supported. Please use <code>.slds-is-expanded</code> instead.</li>
+<li>The rule that hides the close button in Notification Prompt <code>.slds-modal--prompt .slds-modal__close</code> is no longer needed as the HTML should be removed. Please remove the button from the dialog header.</li>
+</ul>
+<p><strong>REMOVED</strong></p>
+<p>The following features are being removed in this release:</p>
+<ul>
+<li>Removed the <code>$static-icon-path</code> configuration variable, since it wasn’t used anywhere in the codebase</li>
+<li>Removed <code>slds-button--small</code>, since it’s the same as the new default button size</li>
+<li>Removed <code>slds-input--small</code>, since it’s the same as the new default input size</li>
+<li>Removed <code>slds-tile__title</code>, since it didn't apply any styles</li>
+</ul>
+<p><strong>🗒 Notes About Scoped CSS files, the Unmanaged Package, Visualforce and Lightning Components</strong></p>
+<p>The Lightning Design System CSS is now automatically included for Lightning Components running in the Lightning Experience and Salesforce S1 mobile application (via <code>app.css</code>). It is no longer necessary to add a static resource for Lightning Components running within these environments.</p>
+<p>Starting in 2.0.x, the Lightning Design System is no longer available as an unmanaged package. Also, the scoped CSS files (<code>salesforce-lightning-design-system-vf.css</code> and <code>salesforce-lightning-design-system-ltng.css</code>) are no longer distributed as part of the Design System zip file (available in the <a href="../downloads/index.html">Downloads</a> page). As an alternative, you may now generate your own scoped Design System zip file using the new <a href="https://tools.lightningdesignsystem.com/css-customizer">CSS Scoping Tool</a> and upload it as a static resource as documented on the tool’s page. However, we strongly recommend that you do not install SLDS as a static resource when building for Lightning.</p>
+<p>Resources:</p>
+<ul>
+<li><a href="https://tools.lightningdesignsystem.com/css-customizer">CSS Scoping Tool</a></li>
+<li><a href="../platforms/lightning/index.html">Using SLDS in Lightning</a></li>
+<li><a href="../platforms/visualforce/index.html">Using SLDS in Visualforce</a></li>
+</ul>
+<h2 class="site-text-heading--large">Release <a href="https://github.com/salesforce-ux/design-system/compare/v1.0.4...v1.0.5">1.0.5</a> - May 26, 2016</h2 class="site-text-heading--large">
+<ul>
+<li>Adding a background color to icons from the <a href="../icons/index.html#custom">custom set</a> is now done using the <code>slds-icon-custom-customXX</code> class (e.g. <code>slds-icon-custom-custom25</code>), instead of <code>slds-icon-custom-XX</code> (deprecated). This change addresses <a href="https://github.com/salesforce-ux/design-system/issues/203">#203</a></li>
+<li>Improved accessibility of the <a href="../components/breadcrumbs/index.html">breadcrumbs component</a></li>
+<li>The Design System now allows developers to load Salesforce webfonts using their preferred method instead of the default <code>@font-face</code> rules. To disable the default font loading method, set <code>$slds-load-webfonts: false;</code> before importing the Design System Sass file.</li>
+<li>The project is now compatible with Node.js 6</li>
+<li>Search! You can now get faster to components and the deepest parts of the documentation using the search field at the top of the navigation</li>
+</ul>
+<h2 class="site-text-heading--large">Release <a href="https://github.com/salesforce-ux/design-system/compare/v1.0.3...v1.0.4">1.0.4</a> - May 18, 2016</h2 class="site-text-heading--large">
+<ul>
+<li>Added <code>title</code> attributes to icon containers, noticeably improving accessibility for users of pointing devices such as mice and trackpads</li>
+<li>Improved the structure of the <a href="../components/icons/index.html">icon component</a> section, making it easier for you to discover how to decorate your Lightning apps with our beautiful icons</li>
+<li>Fixed the standard call icon, which gets its fancy yellow background back, instead of a purple one that had been assigned to it for obscure reasons (we’ve put our best designers on the case!)</li>
+<li>Fixed <a href="https://github.com/salesforce-ux/design-system/issues/208">an issue</a> where <code>npm install</code> would fail on Windows - which is only fair to our developer friends who are on PCs</li>
+</ul>
+<h2 class="site-text-heading--large">Release <a href="https://github.com/salesforce-ux/design-system/compare/v1.0.2...v1.0.3">1.0.3</a> - April 26, 2016</h2 class="site-text-heading--large">
+<ul>
+<li>Fixed Sass build issue for npm module</li>
+</ul>
+<h2 class="site-text-heading--large">Release <a href="https://github.com/salesforce-ux/design-system/compare/v1.0.1...v1.0.2">1.0.2</a> - April 8, 2016</h2 class="site-text-heading--large">
+<ul>
+<li>Added a link to an <a href="https://design-system-v-1-0-0.herokuapp.com/">archive of v1.0.0</a>, so you can access the documentation and downloads for that previous version</li>
+<li>Generated the unmanaged package for the 1.0.2 patch release</li>
+<li>Fixed the application's version number in the Sass configuration</li>
+</ul>
+<h2 class="site-text-heading--large">Release <a href="https://github.com/salesforce-ux/design-system/compare/v1.0.0...v1.0.1">1.0.1</a> - April 8, 2016</h2 class="site-text-heading--large">
+<p>Happy birthday! The Lightning Design System turns 1...</p>
+<p><strong>CHANGES</strong></p>
+<p>The following changes have been made in this release:</p>
+<ul>
+<li>Improved accessibility in the record home variant of the page header component (remove multiple <code>&lt;dl&gt;</code> elements, and use a single <code>&lt;ul&gt;</code> instead) - <a href="../components/page-headers/index.html#record-home">Page Headers</a></li>
+</ul>
+<p><strong>FIXED</strong></p>
+<p>The following issues have now been resolved:</p>
+<ul>
+<li>Use relative paths to point to assets, fixes a bug where running SLDS in certain environments would fail to load assets - Fixes <a href="https://github.com/salesforce-ux/design-system/issues/83">design-system/issues/83</a></li>
+<li>Form element breakpoints now fire at small breakpoint rather than large breakpoint - Fixes <a href="https://github.com/salesforce-ux/design-system/issues/162">design-system/162</a></li>
+<li>Fixed a bug in the Tree component that occurred in the scoped version of SLDS and prevented nested branches from being properly indented  - Fixes <a href="https://github.com/salesforce-ux/design-system/issues/91">design-system/issues/91</a> and <a href="https://github.com/salesforce-ux/design-system/issues/164">design-system/issues/164</a></li>
+<li>Fixed the file naming structure so that standard Sass implementations can watch the entire project and compile the framework correct files on the fly.</li>
+<li>Fixed a bug where compilation would fail when using Ruby Sass - Fixes <a href="https://github.com/salesforce-ux/design-system/issues/173">design-system/issues/173</a></li>
+</ul>
+<h2 class="site-text-heading--large">Release 1.0.0 - March 2, 2016</h2 class="site-text-heading--large">
+<p><strong>SITE IA/ENHANCEMENTS</strong></p>
+<p>The following site enhancements are now available:</p>
+<ul>
+<li>Components and their variants can now be built with states and will show up in the component variant &amp; states navigation on the right, when available</li>
+<li>Improved Component Overview tables for more narrow readability</li>
+<li>Improved status labels. Now associated with colors and contain more information</li>
+<li>Markup and Style guidelines with BEM information - <a href="../guidelines/markup-and-style/index.html">Markup and Style Guidelines</a></li>
+<li>Resources Information - <a href="../articles/index.html">Resource Links</a></li>
+<li>Updated documentation and accessibility information for tabs - <a href="../components/tabs/index.html">Tabs</a></li>
+<li>Improved Grid System documentation - <a href="../components/utilities/grid/index.html">Grid System</a></li>
+<li>Copy updates on components to represent Voice &amp; Tone Guidelines</li>
+</ul>
+<p><strong>NEW COMPONENTS AND VARIANTS</strong></p>
+<p>The following components are now available:</p>
+<ul>
+<li>Docked Composer - <a href="../components/docked-composer/index.html">Docked Composer component</a></li>
+<li>Picklist Multi Select menu - <a href="../components/menus/index.html#picklist-multi-select">Picklist Multi Select component</a></li>
+<li>Fixed text with inputs <a href="../components/forms/index.html#input">Input component state</a></li>
+<li>Inline Level Help - <a href="../components/forms/index.html#inline-level-help">Inline Level Help component</a></li>
+<li>Sales Path - <a href="../components/process/index.html#sales-path-coach">Sales Path component</a></li>
+<li>Setup Wizard - <a href="../components/process/index.html#wizard">Wizard component</a></li>
+<li>Added an elegant way to add spacing between specific grid items — auto functionality in flexbox. <a href="../components/utilities/grid/index.html#alignment-item-bump">Alignment Item Bump Variant</a></li>
+<li>Popover color themes added - <a href="../components/popovers/index.html#themes">Popover Theme Variant</a></li>
+<li>Tree <a href="../components/trees/index.html">Tree Base Component</a> - Tree was completely rebuilt and is now a new component</li>
+</ul>
+<p>Mobile:</p>
+<ul>
+<li>Dialog Menus for small form factor <a href="../components/notifications/index.html#prompt-for-touch">Prompts for Touch</a></li>
+<li>Action overflow for touch - <a href="../components/menus/index.html#action-overflow-for-touch">Action Overflow component</a></li>
+<li>Added Edit dialog form for touch devices - <a href="../components/forms/index.html#edit-dialog-for-touch">Edit Dialog for Touch component</a></li>
+<li>Page Header - <a href="../components/page-headers/index.html#base">Page Header component</a></li>
+</ul>
+<p><strong>ADDED</strong></p>
+<p>The following classes are now available:</p>
+<ul>
+<li>Added max-width sizing utilities - <a href="../components/utilities/sizing/index.html">Max Width sizing</a></li>
+<li>Added zero spacing utility classes - <a href="../components/utilities/spacing/index.html">Spacing utilities</a></li>
+<li>Additional Grid System classes:
+<ul>
+<li>Added <code>.slds-grid--align-end</code> for horizontal alignment on main grid axis</li>
+<li>Added <code>.slds-grid--vertical-align-end</code> and <code>.slds-grid--vertical-align-center</code> for vertical alignment on grid cross axis</li>
+<li>Added <code>.slds-grid--stretch</code> for multi-row vertical stretch support</li>
+<li>Added <code>.slds-grid--reverse</code> and <code>.slds-grid--vertical-reverse</code> to reverse the direction of the grid</li>
+</ul>
+</li>
+<li>Added <code>.slds-text-error</code> for use on icons for validation errors</li>
+<li>Added color to user selection to force good contrast on dark backgrounds</li>
+</ul>
+<p><strong>CHANGES</strong></p>
+<p>The following changes have been made in this release:</p>
+<ul>
+<li>Removed Spinner gifs and refactored as CSS - <a href="../components/spinners/index.html">Spinner component</a></li>
+<li>Source order of both Reversed and Double Media Objects changed. They are no longer reordered using flexbox' order property. <a href="../components/utilities/media-objects/index.html">Media Objects component</a></li>
+<li>Activity Timeline reflects Media Object changes. Also removed <code>dl</code> with single <code>dt</code> &amp; <code>dd</code> pairs and replaced with <code>span</code>s.</li>
+<li>Field-level help popover background color token update - <a href="../components/popovers/index.html#colors">Popover colors</a></li>
+<li>Switched media queries to use <code>em</code> instead of <code>px</code></li>
+<li>Removed icon color from <code>.slds-input__icon</code> so an icon color class is now additionally required</li>
+<li>Reordered tokens so large form factor has priority</li>
+<li>Moved Page Header theme from Utilities to its top-level component category <a href="../components/page-headers/index.html">Page Header component</a></li>
+<li>Removed <code>.slds-m-top--x-small</code> in the page header and replaced with a new class <code>.slds-page-header__info</code></li>
+<li>Vertical spacing adjusted on <em>small</em> viewport for <code>.slds-form--stacked</code>, <code>.slds-form--horizontal</code> and <code>.slds-form--inline</code></li>
+<li>Widths of the Grid container change to <code>480px</code> for small, <code>768px</code> for medium, <code>1024px</code> for large and <code>1280px</code> for x-large.</li>
+<li>The last element inside <code>.slds-text-longform</code> now retains the bottom margin.</li>
+</ul>
+<p><strong>FIXED</strong></p>
+<p>The following issues have now been resolved:</p>
+<ul>
+<li>Fixed <a href="https://github.com/salesforce-ux/design-system/issues/106">#106</a> Fix for scoping issue with tabs and active state - bug. Increased active tab state specificity</li>
+<li>Fixed <a href="https://github.com/salesforce-ux/design-system/issues/61">#61</a> Fixed <a href="https://github.com/salesforce-ux/design-system/issues/51">#51</a> Updated lists &gt; description horizontal to use flexbox. No class change required. <code>dt</code> and <code>dd</code> can now accept sizing utilities. Change margin to padding</li>
+<li>Fixed accessibility bug with required form elements</li>
+<li>Some tokens that were unable to be overridden by not having a <code>!default</code> flag have been resolved</li>
+<li>Compound fields markup has been updated that was causing display issues <a href="../components/forms/index.html#compound-form">Compound Fields</a></li>
+<li>Fixed inverse button-group icon bug</li>
+</ul>
+<p><strong>DEPRECATED</strong></p>
+<p>The following features are being marked as deprecated in this release and will be removed in three releases:</p>
+<ul>
+<li>Deprecated <code>.slds-card--empty</code>. Use <code>.slds-text-align--center</code> instead. - <a href="../components/cards/index.html#empty">Card component</a></li>
+<li>Deprecated <code>.slds-section-title</code>. Use <code>.slds-section__title</code> instead - <a href="../components/utilities/text/index.html#section-title">Section Title</a> for full details</li>
+<li>Deprecated <code>.slds-button--icon-bare</code>. Use <code>.slds-button--icon</code> instead - <a href="../components/buttons/index.html#icon">Button Icon</a></li>
+<li>Deprecated tabs descendant selectors <a href="../components/tabs/index.html">Tabs component</a>:
+<ul>
+<li><code>.slds-tabs--default &gt; slds-tabs__item</code> use <code>.slds-tabs--default__item</code> instead.</li>
+<li><code>.slds-tabs--default &gt; slds-tabs__content</code> use <code>.slds-tabs--default__content</code> instead.</li>
+<li><code>.slds-tabs--default &gt; a</code> use <code>.slds-tabs--default__link</code> instead.</li>
+<li><code>.slds-tabs--scoped &gt; slds-tabs__item</code> use <code>.slds-tabs--scoped__item</code> instead.</li>
+<li><code>.slds-tabs--scoped &gt; slds-tabs__content</code> use <code>.slds-tabs--scoped__content</code> instead.</li>
+<li><code>.slds-tabs--scoped &gt; a</code> use <code>.slds-tabs--scoped__link</code> instead.</li>
+</ul>
+</li>
+<li>Deprecated <code>.slds--tooltip</code>. Use <code>.slds-popover--tooltip</code> instead.</li>
+<li>Deprecated responsive <code>.slds-nowrap--{size}</code> classes due to inconsistent naming. Use <code>.slds-{size}--nowrap</code> instead.</li>
+<li>Deprecated <code>.slds-modal-backdrop</code> and <code>.slds-modal-backdrop--open</code> in favor of <code>.slds-backdrop</code> and <code>.slds-backdrop--open</code> to reuse in other components.</li>
+<li>Deprecated <code>.slds-col-rule--{position}</code> classes due to inconsistent naming. Use <code>.slds-col--rule-{position}</code> instead.</li>
+</ul>
+<h2 class="site-text-heading--large">Release 0.12.2 - February 8, 2016</h2 class="site-text-heading--large">
+<p><strong>SITE IA</strong></p>
+<ul>
+<li>Add Getting Started &gt; Markup and Style guidelines with BEM information</li>
+</ul>
+<p><strong>CHANGES</strong></p>
+<ul>
+<li>Copy updates on components to represent Voice &amp; Tone Guidelines</li>
+<li>Some tokens that were unable to be overridden by not having a !default flag has been resolved</li>
+<li>Reordered tokens so large form factor has priority</li>
+<li>Fix for scoping issue with tabs and active state - bug <a href="https://github.com/salesforce-ux/design-system/issues/106">#106</a></li>
+<li>Increased active tab state specificity</li>
+</ul>
+<h2 class="site-text-heading--large">Release 0.12.1 - December 16, 2015</h2 class="site-text-heading--large">
+<p><strong>SITE IA</strong></p>
+<ul>
+<li>Improve status labels. Now associated with colors and contain more information</li>
+<li>Improve Component Overview tables for more narrow readability</li>
+</ul>
+<p><strong>CHANGES</strong></p>
+<ul>
+<li>Apply proper accessibility requirements (aria-labelledby) to tabs (fixes <a href="https://github.com/salesforce-ux/design-system/issues/107">https://github.com/salesforce-ux/design-system/issues/107</a>). Updated documentation to reflect previous refactoring.</li>
+<li>Fix for inverse button-group icon bug</li>
+<li>Make <code>.slds-text-body--small</code> inherit theme color (fixes <a href="https://github.com/salesforce-ux/design-system/issues/123">https://github.com/salesforce-ux/design-system/issues/123</a>)</li>
+<li>Mark all list utilities &quot;dev-ready&quot; - <a href="../components/utilities/lists/index.html">/components/utilities/lists</a></li>
+<li>Field-level help popover background color token update</li>
+<li>Fix truncation on Sales Path (fixes <a href="https://github.com/salesforce-ux/design-system/issues/135">https://github.com/salesforce-ux/design-system/issues/135</a>)</li>
+<li>Fix chevron alignment on Sales Path - <a href="../components/tabs/index.html#sales-path">/components/tabs#sales-path</a></li>
+<li>Updated demo on buttons &gt; neutral icon to demonstrate &quot;mutton&quot; - <a href="../components/buttons/index.html#neutral-icon">/components/buttons#neutral-icon</a></li>
+<li>Updated lists &gt; description horizontal to use flexbox. No class change required. <code>dt</code> and <code>dd</code> can now accept sizing utilities. Change margin to padding.</li>
+</ul>
+<p><strong>NEW COMPONENTS</strong></p>
+<ul>
+<li>Custom Select container added, normalizes the <code>&lt;select&gt;</code> appearance in various browsers (fixes <a href="https://github.com/salesforce-ux/design-system/issues/122">https://github.com/salesforce-ux/design-system/issues/122</a>)</li>
+</ul>
+<h2 class="site-text-heading--large">Release 0.12.0 - November 18, 2015</h2 class="site-text-heading--large">
+<p><strong>SITE IA</strong></p>
+<ul>
+<li>Added Resources &gt; Links</li>
+<li>Changed tabs to use new refactored tab classes (deprecated)</li>
+</ul>
+<p><strong>BREAKING CHANGES</strong></p>
+<ul>
+<li>Removed default horizontal spacing from buttons in favor of new spacing utilities (deprecated, see New Components below).</li>
+<li>Tabs have been refactored, changing descendent selectors to BEM syntax (deprecated)</li>
+<li>Changed source order of Media Objects &gt; Reversed and Media Objects &gt; Double (No longer reordering using flexbox order property)</li>
+<li>Adjusted Activity Timline &gt; Base to reflect Media Object changes. Removed <code>dl</code> with single <code>dt</code> &amp; <code>dd</code> pairs. Replaced with <code>span</code>s.</li>
+<li><code>slds-modal-backdrop</code> and <code>slds-modal-backdrop--open</code> is deprecated in favor of <code>slds-backdrop</code> and <code>slds-backdrop--open</code> since it is used in other components.</li>
+<li>Removed icon color from <code>.slds-input__icon</code> so that an icon color class is required in addition</li>
+</ul>
+<p><strong>CHANGES</strong></p>
+<ul>
+<li>Switched sizing utility media queries to use <code>em</code> instead of <code>px</code></li>
+<li>Updated demo for icons &gt; color and added <code>slds-text-error</code> for validation errors</li>
+</ul>
+<p><strong>NEW COMPONENTS</strong></p>
+<ul>
+<li>Added initial state of tabs &gt; sales path <a href="../components/tabs/index.html#sales-path">/components/tabs#sales-path</a></li>
+<li>Added max-width sizing utilities <a href="../components/utilities/sizing/index.html">/components/utilities/sizing</a></li>
+<li>Added button spacing utilities for stacked and horizontal sets of buttons (both a single class and a wrapper class) <a href="../components/buttons/index.html#overview">/components/buttons#overview</a></li>
+<li>Added stretched button utilities for full-width buttons on small form factors <a href="../components/buttons/index.html#overview">/components/buttons#overview</a></li>
+<li>Dialog Menus for small form factor
+<ul>
+<li>Action overflow for touch <a href="../components/menus/index.html#action-overflow-for-touch">/components/menus#action-overflow-for-touch</a></li>
+</ul>
+</li>
+<li>Added Edit dialog form for touch devices <a href="../components/forms/index.html#edit-dialog-for-touch">/components/forms#edit-dialog-for-touch</a></li>
+</ul>
+<p><strong>DEPRECATED</strong></p>
+<ul>
+<li>Buttons no longer have default horizontal spacing and require a class or wrapper to provide space</li>
+<li>Name change: Responsive button changed to Horizontal button</li>
+<li><code>slds-modal-backdrop</code> and <code>slds-modal-backdrop--open</code> deprecated in version 0.12.0, use <code>slds-backdrop</code> and <code>slds-backdrop--open</code> instead</li>
+<li>Descendant selectors on tabs were changed to BEM syntax
+<ul>
+<li><code>slds-tabs--default &gt; slds-tabs__item</code> deprecated in version 0.12.0, use <code>slds-tabs--default__item</code> instead</li>
+<li><code>slds-tabs--default &gt; slds-tabs__content</code> deprecated in version 0.12.0, use <code>slds-tabs--default__content</code> instead</li>
+<li><code>slds-tabs--default &gt; a</code> deprecated in version 0.12.0, use <code>slds-tabs--default__link</code> instead</li>
+<li><code>slds-tabs--scoped &gt; slds-tabs__item</code> deprecated in version 0.12.0, use <code>slds-tabs--scoped__item</code> instead</li>
+<li><code>slds-tabs--scoped &gt; slds-tabs__content</code> deprecated in version 0.12.0, use <code>slds-tabs--scoped__content</code> instead</li>
+<li><code>slds-tabs--scoped &gt; a</code> deprecated in version 0.12.0, use <code>slds-tabs--scoped__link</code> instead</li>
+</ul>
+</li>
+<li>Decendent selector on <code>.slds-input__icon</code> fill color deprecated in version 0.12.0, use <code>slds-icon-text-default</code> (or any icon color class) on the icon in addition to the original class</li>
+</ul>
+<h2 class="site-text-heading--large">Release 0.11.0 - October 29, 2015</h2 class="site-text-heading--large">
+<ul>
+<li>Changed notifications &gt; modal to notifications &gt; modal-toast</li>
+<li>Modals &gt; Taglines no longer has a <code>slds-modal__header p</code> selector. Instead, <code>slds-m-top--x-small</code> is placed on the <code>p</code> itself.</li>
+<li>Stateful button has a <code>[disabled]</code> state</li>
+<li>If button-groups need their final down icon to hide when [disabled], the <code>.slds-toggle-visibility</code> should be added to the icon. (This affects all page headers, and cards &gt; base.)</li>
+<li>Nubbins shadows now have proper light source</li>
+<li>Removed interactive dropdowns from page header examples</li>
+<li>Added Google Analytics</li>
+</ul>
+<p><strong>SITE IA</strong></p>
+<ul>
+<li>Moved tooltips to popovers, deprecated tooltip section <a href="../components/popovers/index.html#tooltips">/components/popovers#tooltips</a></li>
+<li>Moved Dropdowns into Menus, deprecated dropdowns sectio <a href="../components/menus/index.html">/components/menus</a></li>
+<li>Moved Picklist Dropdown Menu into Menus <a href="../components/menus/index.html#picklist">/components/menus#picklist</a></li>
+<li>Moved Multi-Select Picklist into Forms <a href="../components/forms/index.html#multi-select">/components/forms#multi-select</a></li>
+<li>Menus component variants are now more explicit
+<ul>
+<li>Dropdown</li>
+<li>Dropdown with Icons</li>
+<li>Dropdown Positioning</li>
+<li>Picklist</li>
+<li>Action Overflow</li>
+<li>Search Overflow</li>
+</ul>
+</li>
+</ul>
+<p><strong>BREAKING CHANGES</strong></p>
+<ul>
+<li>Changed <code>.slds-tooltip</code> to <code>.slds-popover--tooltip</code>, <code>.slds-tooltip</code> will become deprecated (*).</li>
+<li>Deprecated <code>.slds-has-divider</code> (*), now requires a top or bottom direction appened, e.g. <code>.slds-has-divider--top</code>, <code>.slds-has-divider--bottom</code></li>
+<li>Deprecated &quot;Menu with Icons&quot; dropdown variant
+<ul>
+<li>No longer depends on class names that deal with icon positioning</li>
+<li><code>.slds-dropdown__item</code> are set to <code>display: flex</code> with <code>justify-content: space-between</code> by default now. This allows for icon + text to be left aligned and a single icon to be positioned on the same axis to the right hand side. The icon + text that is positioned to the left requires an HTML element, like a <code>&lt;p&gt;</code> with the class <code>.slds-truncate</code> applied.</li>
+<li><code>.slds-has-icon</code>, <code>.slds-has-icon--left</code>, <code>.slds-has-icon--right</code> and children classes <code>.slds-icon--left</code>, <code>.slds-icon--right</code> have been deprecated but will persist in code base (*)</li>
+<li>If user invokes selection on a dropdown item and wants feedback such a a checkmark, that SVG now requires a class of <code>.slds-icon--selected</code></li>
+</ul>
+</li>
+<li><em> (*) Code is still in codebase but will be deprecated, TBD but preliminary removal of release 0.20.0</em></li>
+</ul>
+<p><strong>NEW COMPONENTS</strong></p>
+<ul>
+<li>Added notifications &gt; prompt (modal-style alert) <a href="../components/notifications/index.html#prompt">/components/notifications#prompt</a></li>
+<li>Added Preview Panel Popovers <a href="../components/popovers/index.html#panels">/components/popovers#panels</a></li>
+<li>More directional support for popover nubbins <a href="../components/popovers/index.html#nubbins">/components/popovers#nubbins</a></li>
+</ul>
+<h2 class="site-text-heading--large">Release 0.10.2 - October 29, 2015</h2 class="site-text-heading--large">
+<ul>
+<li>Updated Icons to version 3.2.0</li>
+<li>Dropdown menus now have bottom positioning support, with accommodating nubbin support <a href="../components/menus/index.html#dropdown-positioning">/components/menus#dropdown-positioning</a></li>
+<li>Added Google Analytics</li>
+</ul>
+<h2 class="site-text-heading--large">Release 0.10.1 - October 21, 2015</h2 class="site-text-heading--large">
+<ul>
+<li>Hot fix for picklist width on datepicker</li>
+<li><code>.slds-is-required</code> and <code>.slds-has-error</code> on form elements are now properly scoped within the <code>-vf</code>, <code>-ltng</code> and <code>-scoped</code> compiled css files</li>
+<li>Font size on datepicker properly displays within scoped compiled css files</li>
+</ul>
+<h2 class="site-text-heading--large">Release 0.10.0 - October 20, 2015</h2 class="site-text-heading--large">
+<ul>
+<li>Changed <code>.slds-button__icon</code> fill colors to use currentColor value to match text color changes</li>
+<li>Updated <code>.slds-button--icon-*</code> demo and fixed class name typo</li>
+<li>Added new button variant: <code>.slds-button--destructive</code></li>
+<li>Removed max-width (960px) from Modals &gt; Large</li>
+<li>Added new notification state in modals Notifications &gt; Modal</li>
+<li>Added <code>.slds-no-flex</code> to SVG in Notifications &gt; Toast (needed for modal application)</li>
+<li>Changed picklist label and selection list to fixed width. Applied a 5 option max-height with overflow on list.</li>
+<li>Upgraded <code>@salesforce-ux/design-tokens</code> to 1.3.1</li>
+<li><code>@salesforce-ux/design-system</code> package now includes <em>/assets/icons</em> and <em>/assets/images</em></li>
+</ul>
+<p><strong>BREAKING CHANGES</strong></p>
+<ul>
+<li>Changed <code>.slds-button--icon-border-small</code> to <code>.slds-button--icon-x-small</code>. This aligns with our other icon names which separate sizing from style</li>
+<li>Brought inverse close icons into alignment with the other icon buttons. Class on <code>.slds-button</code> has an added <code>.slds-button--icon-inverse</code>. The class <code>.slds-button__icon--inverse</code> was removed from the SVG within.</li>
+</ul>
+<p><strong>BUG FIXES</strong></p>
+<ul>
+<li><code>.slds-button--icon-*</code> can be placed on an <code>a</code> and aligns to the center</li>
+<li>:hover, :focus state added for <code>.slds-button--icon-bare</code></li>
+<li>fixed line-height in <code>.slds-button--icon-border-small</code> and <code>.slds-button--icon-bare</code></li>
+<li>Added <code>overflow: auto;</code> to the options container for a Multi Select picklist</li>
+</ul>
+<p><strong>NEW COMPONENTS</strong></p>
+<ul>
+<li><a href="../components/buttons/index.html#responsive">Full-width button variant</a> for small form factors</li>
+<li><a href="../components/feeds/index.html">Feed and Comment components</a> have been added</li>
+<li><a href="../components/publishers/index.html">Publisher component</a> has been added</li>
+</ul>
+<p><strong>SASS UPDATES</strong></p>
+<ul>
+<li>Abstracted form states into own mixins</li>
+<li>Abstracted feed vertical rule into own mixin</li>
+</ul>
+<h2 class="site-text-heading--large">Site Update - October 20, 2015</h2 class="site-text-heading--large">
+<ul>
+<li>Fixed issues when installing with npm 3</li>
+<li>Updated Voice and Tone guidelines</li>
+</ul>
+<h2 class="site-text-heading--large">Site Update - October 5th, 2015</h2 class="site-text-heading--large">
+<ul>
+<li>Clicking anchor links will position the anchor on the page a bit lower than the top of the window now</li>
+<li>Added typography documentation to design section</li>
+<li>Added examples for a checkbox fieldset and radio fieldset within the horizontal form modifier</li>
+</ul>
+<h2 class="site-text-heading--large">Release 0.9.2 - October 5th, 2015</h2 class="site-text-heading--large">
+<ul>
+<li>Updated package.json to point to README for licensing information</li>
+<li>Upgrade icons to v3.1.0</li>
+<li>Updated small input styles</li>
+<li>Applied styles to fix the height of a select element when used [size] attribute is applied</li>
+<li>Forced stacking of checkbox and radio elements when inside a horizontal form modifier</li>
+<li>Updated picklist, font weight on item select, fixed time select dropdown</li>
+</ul>
+<h2 class="site-text-heading--large">Site Update - September 25th, 2015</h2 class="site-text-heading--large">
+<ul>
+<li>Doc changes</li>
+<li>Internal SVG icon helper can use <code>&lt;use xlink:href=&quot;...&quot;&gt;&lt;/use&gt;</code> now</li>
+<li>Miscellaneous typo fixes</li>
+</ul>
+<h2 class="site-text-heading--large">Release 0.9.1 — September 24th, 2015</h2 class="site-text-heading--large">
+<ul>
+<li>Fixed issue with npm module dependencies</li>
+<li>Fixes issue that caused deprecated design tokens to display</li>
+</ul>
+<h2 class="site-text-heading--large">Release 0.9.0 — September 9th, 2015</h2 class="site-text-heading--large">
+<ul>
+<li>Open Sourced: <a href="http://github.com/salesforce-ux/design-system">github.com/salesforce-ux/design-system</a>
+<ul>
+<li>CSS files scoped in <code>.slds</code> have been added/updated for the following:</li>
+<li>Visualforce (<code>-vf</code>)</li>
+<li>Lightning Platform (<code>-ltng</code>)</li>
+<li>General Use (Most likely in conjuction with other frameworks) (<code>-scoped</code>)</li>
+</ul>
+</li>
+</ul>
+<h1 class="site-text-heading--label">Site</h1 class="site-text-heading--label">
+<ul>
+<li>Content
+<ul>
+<li>Getting Started
+<ul>
+<li>Heroku Added</li>
+</ul>
+</li>
+<li>Design
+<ul>
+<li>Overview Added</li>
+<li>Colour Added</li>
+<li>Data Entry Added</li>
+<li>Displaying Data Added</li>
+<li>Messaging Added</li>
+</ul>
+</li>
+<li>Voice &amp; Tone Added</li>
+<li>Native -&gt; iOS - Use our iOS integration to style your native iOS applications</li>
+</ul>
+</li>
+</ul>
+<h1 class="site-text-heading--label">Components</h1 class="site-text-heading--label">
+<p><strong>Many accessibility updates</strong></p>
+<ul>
+<li>
+<p>Changed components to dev-ready: Button Groups, Cards, Tiles, Icons</p>
+</li>
+<li>
+<p>Lookups:</p>
+<ul>
+<li>Accessibility Requirements added</li>
+<li>Multi-Select Design and Markup updated</li>
+<li>Multi-Scope Design and Markup updated</li>
+<li><code>.slds-lookup__control</code> has been deprecated, now uses <code>.slds-form-element__control</code></li>
+</ul>
+</li>
+<li>
+<p>Pill Container Added <code>.slds-pill-container</code></p>
+<ul>
+<li>Can contain one or many pills, used on <code>.slds-lookup</code></li>
+</ul>
+</li>
+<li>
+<p>Data-Tables</p>
+<ul>
+<li>Row Selection (<code>.slds-is-selected</code>) and row selection hovers have been fixed</li>
+</ul>
+</li>
+<li>
+<p>Tabs</p>
+<ul>
+<li>Updated tabs to have <code>aria-controls</code> with the same ID in the tab content container</li>
+</ul>
+</li>
+<li>
+<p>Tiles &gt; Author and with-icon have empty alt added</p>
+</li>
+<li>
+<p>Datepickers &gt; multi-select and Forms &gt; compound-form have <code>small</code> element changed to <code>span</code></p>
+</li>
+<li>
+<p>Card &gt; All variants have DOM changed (header, section, footer changed to div)</p>
+</li>
+<li>
+<p>Data-tables &gt; All variants have accessibility upgrades for <code>th role=&quot;row&quot;</code></p>
+</li>
+<li>
+<p>Forms &gt; validation state now has additional errors surfaced for radio and checkbox</p>
+</li>
+<li>
+<p>Datepickers &gt; All variants</p>
+<ul>
+<li>Removed <code>role=&quot;button&quot; aria-labelledby=&quot;bn_prev-label&quot;</code></li>
+<li>Changed <code>div#month</code> to <code>h2 class="site-text-heading--large"</code> and removed <code>role=&quot;heading&quot;</code></li>
+<li>Removed all tabindex</li>
+<li>Removed <code>span#bn_prev-label</code> and <code>span#bn_next-label</code></li>
+</ul>
+</li>
+<li>
+<p>Dropdowns &gt; All variants have <code>aria-haspopup=&quot;true&quot;</code> moved to the <code>button</code> (actionable element)</p>
+</li>
+<li>
+<p>Page headers &gt; All variants have <code>role=&quot;banner&quot;</code> added</p>
+</li>
+<li>
+<p>Picklists &gt; Quickfind temporarily removed until DOM is updated</p>
+</li>
+</ul>
+<h1 class="site-text-heading--label">Utilities</h1 class="site-text-heading--label">
+<ul>
+<li>Text &gt; Faux Links has added cursor:pointer</li>
+</ul>
+<p>Lots of bug fixes and TLC.</p>
+</div></div></main><div class="site-navigation site-navigation--has-search"><form id="search" aria-hidden="true" novalidate="" class="searchbox"><div role="search" class="searchbox__wrapper"><label for="docsearch" class="slds-assistive-text">Search: type text, then use the up and down arrows to navigate results</label><input id="docsearch" type="search" name="search" placeholder="Search" autocomplete="off" required="" class="searchbox__input slds-input"/><button type="submit" class="slds-assistive-text">Submit your search query</button><button type="reset" title="Clear the search query" class="searchbox__reset hide"><svg role="img" aria-label="Reset"><use xlink:href="../assets/icons/utility-sprite/svg/symbols.svg#close"></use></svg></button></div></form><nav id="navigation" role="navigation" tabindex="-1"><ul class="slds-list--vertical slds-has-block-links"><li class="slds-list__item"><a href="../getting-started/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Getting Started</span></span></a></li><li class="slds-list__item is-closed" data-slds-nav-children="true"><a href="javascript:void(0);"><span class="slds-media slds-media--center"><span class="slds-media__body">Platforms</span><span class="slds-media__figure--reverse"><svg aria-hidden="true" class="icon icon__svg icon-utility-right icon--small icon-text-default"><use xlink:href="../assets/icons/utility-sprite/svg/symbols.svg#right"></use></svg></span></span></a><ul class="slds-list--vertical slds-has-block-links slds-is-nested"><li class="slds-list__item"><a href="../platforms/visualforce/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Visualforce</span></span></a></li><li class="slds-list__item"><a href="../platforms/lightning/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Lightning</span></span></a></li><li class="slds-list__item"><a href="../platforms/heroku/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Heroku</span></span></a></li><li class="slds-list__item"><a href="../platforms/ios/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">iOS</span></span></a></li></ul></li><li class="slds-list__item is-closed" data-slds-nav-children="true"><a href="javascript:void(0);"><span class="slds-media slds-media--center"><span class="slds-media__body">Guidelines</span><span class="slds-media__figure--reverse"><svg aria-hidden="true" class="icon icon__svg icon-utility-right icon--small icon-text-default"><use xlink:href="../assets/icons/utility-sprite/svg/symbols.svg#right"></use></svg></span></span></a><ul class="slds-list--vertical slds-has-block-links slds-is-nested"><li class="slds-list__item"><a href="../guidelines/overview/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Overview</span></span></a></li><li class="slds-list__item"><a href="../guidelines/accessibility/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Accessibility</span></span></a></li><li class="slds-list__item"><a href="../guidelines/color/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Color</span></span></a></li><li class="slds-list__item"><a href="../guidelines/data-entry/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Data Entry</span></span></a></li><li class="slds-list__item"><a href="../guidelines/displaying-data/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Displaying Data</span></span></a></li><li class="slds-list__item"><a href="../guidelines/layout/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Layout</span></span></a></li><li class="slds-list__item"><a href="../guidelines/loading/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Loading</span></span></a></li><li class="slds-list__item"><a href="../guidelines/markup-and-style/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Markup and Style</span></span></a></li><li class="slds-list__item"><a href="../guidelines/messaging/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Messaging</span></span></a></li><li class="slds-list__item"><a href="../guidelines/localization/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Localization</span></span></a></li><li class="slds-list__item"><a href="../guidelines/motion/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Motion</span></span></a></li><li class="slds-list__item"><a href="../guidelines/navigation/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Navigation</span></span></a></li><li class="slds-list__item"><a href="../guidelines/typography/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Typography</span></span></a></li><li class="slds-list__item"><a href="../guidelines/voice-and-tone/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Voice and Tone</span></span></a></li></ul></li><li class="slds-list__item is-closed" data-slds-nav-children="true"><a href="javascript:void(0);"><span class="slds-media slds-media--center"><span class="slds-media__body">Components</span><span class="slds-media__figure--reverse"><svg aria-hidden="true" class="icon icon__svg icon-utility-right icon--small icon-text-default"><use xlink:href="../assets/icons/utility-sprite/svg/symbols.svg#right"></use></svg></span></span></a><ul class="slds-list--vertical slds-has-block-links slds-is-nested"><li class="slds-list__item is-closed" data-slds-nav-children="true"><a href="javascript:void(0);"><span class="slds-media slds-media--center"><span class="slds-media__body">Utilities</span><span class="slds-media__figure--reverse"><svg aria-hidden="true" class="icon icon__svg icon-utility-right icon--small icon-text-default"><use xlink:href="../assets/icons/utility-sprite/svg/symbols.svg#right"></use></svg></span></span></a><ul class="slds-list--vertical slds-has-block-links slds-is-nested"><li class="slds-list__item"><a href="../components/utilities/alignment/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Alignment</span></span></a></li><li class="slds-list__item"><a href="../components/utilities/floats/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Floats</span></span></a></li><li class="slds-list__item"><a href="../components/utilities/grid/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Grid</span></span></a></li><li class="slds-list__item"><a href="../components/utilities/hyphenation/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Hyphenation</span></span></a></li><li class="slds-list__item"><a href="../components/utilities/interactions/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Interactions</span></span></a></li><li class="slds-list__item"><a href="../components/utilities/lists/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Lists</span></span></a></li><li class="slds-list__item"><a href="../components/utilities/media-objects/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Media Objects</span></span></a></li><li class="slds-list__item"><a href="../components/utilities/position/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Position</span></span></a></li><li class="slds-list__item"><a href="../components/utilities/scrollable/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Scrollable</span></span></a></li><li class="slds-list__item"><a href="../components/utilities/sizing/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Sizing</span></span></a></li><li class="slds-list__item"><a href="../components/utilities/spacing/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Spacing</span></span></a></li><li class="slds-list__item"><a href="../components/utilities/text/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Text</span></span></a></li><li class="slds-list__item"><a href="../components/utilities/themes/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Themes</span></span></a></li><li class="slds-list__item"><a href="../components/utilities/truncation/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Truncation</span></span></a></li><li class="slds-list__item"><a href="../components/utilities/visibility/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Visibility</span></span></a></li></ul></li><li class="slds-list__item is-closed" data-slds-nav-children="true"><a href="javascript:void(0);"><span class="slds-media slds-media--center"><span class="slds-media__body">Touch</span><span class="slds-media__figure--reverse"><svg aria-hidden="true" class="icon icon__svg icon-utility-right icon--small icon-text-default"><use xlink:href="../assets/icons/utility-sprite/svg/symbols.svg#right"></use></svg></span></span></a><ul class="slds-list--vertical slds-has-block-links slds-is-nested"><li class="slds-list__item"><a href="../components/touch/forms/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Forms</span></span></a></li><li class="slds-list__item"><a href="../components/touch/menus/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Menus</span></span></a></li><li class="slds-list__item"><a href="../components/touch/notifications/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Notifications</span></span></a></li><li class="slds-list__item"><a href="../components/touch/page-headers/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Page Headers</span></span></a></li></ul></li><li class="slds-list__item slds-has-divider--top-space"><a href="../components/activity-timeline/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Activity Timeline</span></span></a></li><li class="slds-list__item"><a href="../components/app-launcher/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">App Launcher</span></span></a></li><li class="slds-list__item"><a href="../components/badges/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Badges</span></span></a></li><li class="slds-list__item"><a href="../components/breadcrumbs/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Breadcrumbs</span></span></a></li><li class="slds-list__item"><a href="../components/buttons/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Buttons</span></span></a></li><li class="slds-list__item"><a href="../components/button-icons/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Button Icons</span></span></a></li><li class="slds-list__item"><a href="../components/button-groups/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Button Groups</span></span></a></li><li class="slds-list__item"><a href="../components/cards/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Cards</span></span></a></li><li class="slds-list__item"><a href="../components/data-tables/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Data Tables</span></span></a></li><li class="slds-list__item"><a href="../components/datepickers/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Datepickers</span></span></a></li><li class="slds-list__item"><a href="../components/docked-composer/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Docked Composer</span></span></a></li><li class="slds-list__item"><a href="../components/docked-utility-bar/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Docked Utility Bar</span></span></a></li><li class="slds-list__item"><a href="../components/feeds/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Feeds</span></span></a></li><li class="slds-list__item"><a href="../components/files/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Files</span></span></a></li><li class="slds-list__item"><a href="../components/file-selector/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">File Selector</span></span></a></li><li class="slds-list__item"><a href="../components/forms/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Forms</span></span></a></li><li class="slds-list__item"><a href="../components/global-header/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Global Header</span></span></a></li><li class="slds-list__item"><a href="../components/global-navigation/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Global Navigation</span></span></a></li><li class="slds-list__item"><a href="../components/icons/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Icons</span></span></a></li><li class="slds-list__item"><a href="../components/images/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Images</span></span></a></li><li class="slds-list__item"><a href="../components/lookups/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Lookups</span></span></a></li><li class="slds-list__item"><a href="../components/menus/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Menus</span></span></a></li><li class="slds-list__item"><a href="../components/modals/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Modals</span></span></a></li><li class="slds-list__item"><a href="../components/navigation/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Navigation</span></span></a></li><li class="slds-list__item"><a href="../components/notifications/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Notifications</span></span></a></li><li class="slds-list__item"><a href="../components/page-headers/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Page Headers</span></span></a></li><li class="slds-list__item"><a href="../components/panels/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Panels</span></span></a></li><li class="slds-list__item"><a href="../components/picklist/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Picklist</span></span></a></li><li class="slds-list__item"><a href="../components/pills/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Pills</span></span></a></li><li class="slds-list__item"><a href="../components/process/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Process</span></span></a></li><li class="slds-list__item"><a href="../components/popovers/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Popovers</span></span></a></li><li class="slds-list__item"><a href="../components/publishers/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Publishers</span></span></a></li><li class="slds-list__item"><a href="../components/spinners/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Spinners</span></span></a></li><li class="slds-list__item"><a href="../components/tabs/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Tabs</span></span></a></li><li class="slds-list__item"><a href="../components/tiles/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Tiles</span></span></a></li><li class="slds-list__item"><a href="../components/tooltips/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Tooltips</span></span></a></li><li class="slds-list__item"><a href="../components/trees/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Trees</span></span></a></li></ul></li><li class="slds-list__item"><a href="../design-tokens/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Design Tokens</span></span></a></li><li class="slds-list__item"><a href="../icons/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Icons</span></span></a></li><li class="slds-list__item"><a href="../downloads/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Downloads</span></span></a></li><li class="slds-list__item"><a href="../articles/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body">Articles</span></span></a></li><li class="slds-list__item"><a href="../faq/index.html"><span class="slds-media slds-media--center"><span class="slds-media__body"><abbr title="Frequently Asked Questions">FAQ</abbr></span></span></a></li><li class="slds-list__item"><a href="https://github.com/salesforce-ux/design-system/issues"><span class="slds-media slds-media--center"><span class="slds-media__body">Feedback</span></span></a></li></ul></nav></div><footer class="site-contentinfo slds-grid slds-wrap site-text-longform slds-text-body--small" role="contentinfo"><p class="slds-p-horizontal--x-large slds-size--1-of-1 slds-shrink-none slds-large-size--2-of-3">Copyright © 2015-2016 <span class="site-name">Sales<i>f</i>orce. </span><a href="http://salesforce.com/company/legal/intellectual.jsp" data-slds-cta-event="true" data-slds-cta-event-name="CTA" data-slds-cta-event-type="copyright">All rights reserved</a>. Version 2.1.3. Last Updated on October 14th 2016, 11:27 pm.</p><p class="slds-p-horizontal--x-large slds-text-align--right slds-size--1-of-1 slds-shrink-none slds-large-size--1-of-3"><a class="site-social-twitter" href="http://twitter.com/salesforceux" title="Follow @salesforceux on Twitter">Twitter</a><a class="site-social-dribbble" href="http://dribbble.com/salesforce" title="Find us on Dribbble">Dribbble</a><a class="site-social-github" href="https://github.com/salesforce-ux/design-system" title="Get the code on GitHub">GitHub Repository</a></p></footer></div></div><script src="../assets/scripts/site.js"></script></body>
+<!-- Mirrored from www.lightningdesignsystem.com/release-notes/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Oct 2016 14:52:53 GMT -->
+</html>
